@@ -36,6 +36,10 @@ class Paper:
         except:
             return "none.pdf"
     
+    def getDOI(self):
+    	return self.DOI.replace("/", "\\", 2)+".pdf"
+
+
     def setBibtex(self,bibtex):
         x=bibtexparser.loads(bibtex, parser=None)
         x=x.entries
