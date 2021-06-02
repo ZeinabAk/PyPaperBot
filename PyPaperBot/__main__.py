@@ -44,8 +44,8 @@ def start(query, scholar_pages, dwn_dir, min_date=None, num_limit=None, num_limi
     
         downloadPapers(to_download, dwn_dir, num_limit, SciHub_URL)
 
-    Paper.generateReport(to_download,dwn_dir+"result.csv")
-    Paper.generateBibtex(to_download,dwn_dir+"bibtex.bib")
+    #Paper.generateReport(to_download,dwn_dir+"result.csv")
+    #Paper.generateBibtex(to_download,dwn_dir+"bibtex.bib")
     
 
 
