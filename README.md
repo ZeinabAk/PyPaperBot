@@ -96,18 +96,9 @@ py -m PyPaperBot --doi="10.0086/s41037-711-0132-1" --dwn-dir="C:\User\example\pa
 
 Feel free to contribute to this project by proposing any change, fix, and enhancement on the **dev** branch
 
-### To do
-
-- Tests
-- Code documentation
-- General improvements
 
 ## Disclaimer
 
 This application is for educational purposes only. I do not take responsibility for what you choose to do with this application.
 
-## Donation
 
-If you like this project, you can give me a cup of coffee :) 
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/ferru97)
