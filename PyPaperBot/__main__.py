@@ -46,7 +46,7 @@ def start(query, scholar_pages, dwn_dir, min_date=None, num_limit=None, num_limi
 
     #Paper.generateReport(to_download,dwn_dir+"result.csv")
     #Paper.generateBibtex(to_download,dwn_dir+"bibtex.bib")
-    print(DOI)
+    print('Doi',DOI)
     
 
 
