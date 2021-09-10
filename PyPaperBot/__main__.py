@@ -10,7 +10,7 @@ from .Crossref import getPapersInfoFromDOIs
 
 
 def start(query, scholar_pages, dwn_dir, min_date=None, num_limit=None, num_limit_type=None, filter_jurnal_file=None, restrict=None, DOIs=None, SciHub_URL=None):
-    
+    print('Doi',DOIs)
     to_download = []
     if DOIs==None:
         print("Query: {}".format(query)) 
@@ -41,7 +41,7 @@ def start(query, scholar_pages, dwn_dir, min_date=None, num_limit=None, num_limi
             
         if num_limit_type!=None and num_limit_type==1:       
             to_download.sort(key=lambda x: int(x.sc_cites) if x.sc_cites!=None else 0, reverse=True)
-        print('Doi',DOI)
+        
         downloadPapers(to_download, dwn_dir, num_limit, SciHub_URL)
 
     #Paper.generateReport(to_download,dwn_dir+"result.csv")
