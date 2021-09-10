@@ -45,7 +45,7 @@ def getPapersInfo(papers, scholar_search_link, restrict):
         title = paper['title']
         queries = {'query.bibliographic': title.lower(),'sort':'relevance',"select":"DOI,title,deposited,author,short-container-title"}
         
-        print("Searching paper {} of {} on Crossref...".format(num,len(papers)))
+        #print("Searching paper {} of {} on Crossref...".format(num,len(papers)))
         num += 1
 
         found_timestamp = 0
