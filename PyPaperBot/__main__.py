@@ -30,7 +30,6 @@ def start(query, scholar_pages, dwn_dir, min_date=None, num_limit=None, num_limi
                         
     
     if restrict!=0 and to_download:
-        print('Doi',DOIs)
         if filter_jurnal_file!=None:
            to_download = filterJurnals(to_download,filter_jurnal_file)
        
@@ -139,3 +138,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    return "test for now"
