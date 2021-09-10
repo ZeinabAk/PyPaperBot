@@ -20,7 +20,7 @@ def setSciHubUrl():
         except:
             pass
     if found:
-        print("(\'Sci-Hub\':{})".format(NetInfo.SciHub_URL))
+        print("(\'Sci-Hub\',\'{}\')".format(NetInfo.SciHub_URL))
     else:
         print("\nNo working Sci-Hub instance found!\nIf in your country Sci-Hub is not available consider using a VPN")
         NetInfo.SciHub_URL = "https://sci-hub.st"
@@ -57,7 +57,7 @@ def downloadPapers(papers, dwnl_dir, num_limit, SciHub_URL=None):
     paper_files = []
     for p in papers: 
         if p.canBeDownloaded() and (num_limit==None or num_downloaded<num_limit):        
-            print("(\'DOI\': {})".format(p.getDOI()))
+            print("(\'DOI\', \'{}\')".format(p.getDOI()))
             paper_number += 1
             
             pdf_dir = getSaveDir(dwnl_dir, p.getDOI())
