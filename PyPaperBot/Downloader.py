@@ -57,7 +57,7 @@ def downloadPapers(papers, dwnl_dir, num_limit, SciHub_URL=None):
     paper_files = []
     for p in papers: 
         if p.canBeDownloaded() and (num_limit==None or num_downloaded<num_limit):        
-            print("(\'DOI\', \'{}\')".format(p.getDOI()))
+            print("(\'DOI\', r\'{}\')".format(p.getDOI()))
             paper_number += 1
             
             pdf_dir = getSaveDir(dwnl_dir, p.getDOI())
