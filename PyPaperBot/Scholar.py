@@ -34,7 +34,7 @@ def scholar_requests(scholar_pages, url, restrict):
                 break
 
         papers = schoolarParser(html)
-        print("\nGoogle Scholar page {} : {} papers found".format(i,len(papers)))
+     print("(\'Google Scholar page \' : {})".format(len(papers)))
         
         if(len(papers)>0):
             papersInfo = getPapersInfo(papers, url, restrict)
