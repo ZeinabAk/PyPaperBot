@@ -39,7 +39,7 @@ def scholar_requests(scholar_pages, url, restrict):
         if(len(papers)>0):
             papersInfo = getPapersInfo(papers, url, restrict)
             info_valids = functools.reduce(lambda a,b : a+1 if b.DOI!=None else a, papersInfo, 0)
-            print("(\'Crossref'\: {})".format(len(papers)))
+            print("(\'Crossref\': {})".format(len(papers)))
             
             to_download.append(papersInfo)
         else:
