@@ -16,7 +16,7 @@ PyPaerbot is also able to download the **bibtex** of each paper.
 
 
 ## Why this fork
-In this version, the downloaded pdf names is the doi.
+In this version, the downloaded pdf names is the doi instead of the paper title.
 
 
 ## Installation
